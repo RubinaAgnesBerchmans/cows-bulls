@@ -1,0 +1,17 @@
+<div class="main-page">
+	<form class="level">
+    	{{input placeholder="level" value=numberLength}}
+		<button type="submit" {{action 'saveLevel' numberLength}} >Submit</button>
+ 	</form>
+	<div class="guess" style="display:none;">
+		<form id="guess-value" >
+    		{{input  placeholder="Enter ur guess" value=guess}}
+			<button type="submit"  {{action 'computeGuess' guess}}>Submit</button>
+			
+ 		</form>
+		 <div id="values">
+			</div>
+	</div> 
+</div>
+{{outlet}}
+
